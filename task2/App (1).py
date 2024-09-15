@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # Connect to MongoDB
 try:
     client = MongoClient("mongodb://localhost:27017/")
-    db = client["Almayadeen"]
+    db = client["almayadeen"]
     collection = db["Articles"]
 except errors.ConnectionError as e:
     app.logger.error(f"Database connection failed: {e}")
